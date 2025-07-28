@@ -8,7 +8,7 @@ WORKDIR /app
 COPY myclosestbot.py .
 
 # Install the python-telegram-bot library
-RUN pip install python-telegram-bot
+RUN pip install python-telegram-bot python-dotenv
 
 # Command to run the bot
 CMD ["python", "myclosestbot.py"]
